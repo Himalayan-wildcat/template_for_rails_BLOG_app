@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV.fetch("TEMPLATE_FOR_RAILS_BLOG_APP_DATABASE_USERNAME") %> 
+  password: <%= ENV.fetch("TEMPLATE_FOR_RAILS_BLOG_APP_DATABASE_PASSWORD") %> 
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *default
+  database: template_for_rails_BLOG_app_development
+
+test:
+  <<: *default
+  database: template_for_rails_BLOG_app_test
+
+production:
+  <<: *default
+  database: template_for_rails_BLOG_app_production
+  username: template_for_rails_BLOG_app
+  password: <%= ENV['TEMPLATE_FOR_RAILS_BLOG_APP_DATABASE_PASSWORD'] %>
