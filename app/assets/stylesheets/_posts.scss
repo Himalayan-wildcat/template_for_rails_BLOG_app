@@ -1,0 +1,20 @@
+.posts.index {
+  .card {
+    .card-body {
+      .published-by {
+        font-size: 0.8rem;
+        color: $primary-text-color;
+        font-weight: 300;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+      }
+      .date-published {
+        font-size: 0.8rem;
+        color: $primary-text-color;
+        font-weight: 300;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+}
