@@ -1,0 +1,16 @@
+.navbar {
+  background-color: $primary-color;
+  .navbar-toggler {
+    .navbar-toggler-icon {
+      background-color: $white;
+    }
+  }
+  .navbar-brand {
+    color: $white;
+  }
+  .navbar-collapse {
+    .nav-link {
+      color: $white;
+    }
+  }
+}
