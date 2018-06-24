@@ -1,5 +1,11 @@
 .posts.index {
   .card {
+    .thumbnail {
+      .img-thumbnail {
+        padding: 0.15rem;
+        border: none;
+        border-bottom: 1px solid #dee2e6;
+      }
     .card-body {
       .published-by {
         font-size: 0.8rem;
@@ -15,6 +21,7 @@
         margin-top: 0.3rem;
         margin-bottom: 0.3rem;
       }
+    }
     }
   }
 }
